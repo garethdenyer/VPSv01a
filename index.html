@@ -74,5 +74,14 @@
       };
       document.body.appendChild(script);
     </script>
+    <script>
+function CopyToClipboard(arg){
+var tempInput = document.createElement("textarea");
+tempInput.value = arg;
+document.body.appendChild(tempInput);
+tempInput.select();
+document.execCommand("copy");
+document.body.removeChild(tempInput); }
+</script>
   </body>
 </html>
